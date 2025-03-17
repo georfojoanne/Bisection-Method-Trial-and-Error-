@@ -5,7 +5,7 @@
 using namespace std;
 
 double f(double x) {
-    return (x*x) - 5; // Example function (finding sqrt(5))
+    return (x * x) - 5;; // Example function (can be changed later)
 }
 
 double bisectionMethod(double a, double b, double tol = 0.00005, int max_iter = 100) {
@@ -18,7 +18,7 @@ double bisectionMethod(double a, double b, double tol = 0.00005, int max_iter = 
     int iteration = 0;
     double c, fc;
 
-    // Table header
+
     cout << left << setw(10) << "Iteration" 
          << "| " << setw(15) << "Interval" 
          << "| " << setw(12) << "Midpoint" 
@@ -29,7 +29,7 @@ double bisectionMethod(double a, double b, double tol = 0.00005, int max_iter = 
         c = (a + b) / 2.0; // Midpoint
         fc = f(c);
 
-        // Print iteration details in tabular format
+
         cout << left << setw(10) << iteration + 1 
              << "| [" << setw(7) << fixed << setprecision(5) << a << ", " 
                         << setw(7) << fixed << setprecision(5) << b << "]"
